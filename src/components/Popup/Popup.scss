@@ -1,0 +1,49 @@
+.popup {
+  width: 208px;
+  position: absolute;
+  &__button-close {
+    background: transparent;
+    border: 0;
+    width: 20px;
+    height: 20px;
+  }
+  &__header {
+    background:  #353D4B;
+    height: 38px;
+    padding: 8px 12px 8px 12px;
+    border-radius: 12px 12px 0 0;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__body {
+    background: white;
+    height: 300px;
+  }
+  &__items {
+    padding: 8px;
+    margin: 0;
+    list-style: none;
+  }
+  &__item {
+    background: #E4E5E8;
+      margin-bottom: 8px;
+      border-radius: 12px;
+      padding: 8px;
+      color: #6D7885;
+      cursor: pointer;
+      border: 1px solid transparent;
+      &_active {
+        color:black;
+        font-weight: bold;
+        border: 1px solid black;
+      }
+      &_selected {
+        background: #4587ED;
+      }
+  }
+}
